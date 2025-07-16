@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width:450px;
+    height: 530px;
+    margin: 20px auto;
+    border:5px solid crimson;
+    position: relative;
+}
+
+.box{
+    
+    background: steelblue;
+    width:100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*Todos los elementos tiene ese valor por defecto, No se van poder desplazar ni modificar en el flujo, no esta posicionado,
+Para que sea posicionado desbloquea ciertas propiedades
+*/
+.static{
+    position: static;
+}
+/* 
+Al principio no modifica el flujo ni el posicionamiento del elemento
+La manera de saber que un elemento está posicionado es que se desbloquea las 4 propiedades: left, right, top, bottom
+Se desplaza o se mueve dependiendo de su posición original
+Si el elemento se mueve el espacio queda en la psición original
+*/
+.relative{
+    background: crimson;
+    position: relative;
+    /* 
+    top:;
+    left:;
+    right:;
+    bottom:;
+    */
+    
+}
+
+/* 
+Los elementos pierden su espacio en el flujo, salen del flujo
+En base al ancestro posicionado, se va a posicionar el elemento
+z-index: por defecto toma como van creándose los elementos
+*/
+.absolute{
+    background: purple;
+    position: absolute;
+    top:30%;
+    left: 40px;
+    margin: 0;
+}
+/* 
+    Pierde su espacio en el flujo,
+    Se posiciona en función del navegador o del viewport
+*/
+.fixed{
+    background: tomato;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0;
+}

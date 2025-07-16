@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.box{
+    
+    background: steelblue;
+    width:55px;
+    height: 55px;
+    margin: 10 0;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 55px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.container{
+    margin-left: -5px;
+    padding: 10px 0;
+    border:3px solid lightcoral;
+}
+
+/* Filtrar elementos por su tipo ejemplo: seleccionamos elementos h1, el tipo h1 */
+
+/* Esta seudoclase aplica el estilo a un elemento que no tiene hermano y no tiene hermano del mismo tipo */
+/* div:only-of-type{
+   
+} */
+ /* Estamos seleccionado los elementos único de tipo en su padre */
+ /* .box:only-of-type{
+     background: tomato;
+ } */
+
+ 
+
+
+ /* Selecciona la último elemento de su tipo que esté dentro del contenedor */
+  /* .box:last-of-type{
+    background: tomato;
+ } */
+/* Selecciona aun elemento dentro del contenedor */
+
+/* .box:nth-of-type(3){
+    background: tomato;
+} */
+
+/* Selecciona los elementos que son de mismo tipo que sea impar dentro de su contenedor */
+
+/* .box:nth-of-type(odd){
+    background: tomato;
+} */
+
+/* Selecciona a todos los elementos */
+ /* .box:nth-of-type(n){
+    background: tomato;
+}  */
+
+/* Selecciona los elementos que no tenga hermanos */
+/* .box:only-child{
+    background: tomato;
+} */
+
+/* Selecciona al primer elemento hijo de su contenedor */
+/* div:first-child{
+     background: tomato;
+} */
+
+ /*Seleccionar  el último elemento de su padre  */
+
+ /* div:last-child{
+     background: tomato;
+} */

@@ -1,0 +1,106 @@
+/* La seudoclase root selecciona la raíz de nuestro documento html, se coloca los estilos globales */
+/* :root{
+    background: steelblue;
+} */
+
+.enlace{
+    display: block;
+    background:tomato;
+    color:#fff;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 3px solid #ebd1db;
+}
+/* Le aplica el estilos a los elementos que no han sido visitados */
+.enlace:link{
+    background: burlywood;
+}
+/* Le aplica el estilos a los elementos que han sido visitados */
+.enlace:visited{
+    background: crimson;
+}
+/* Le aplica los estilos  al elemento que le está pasando el mouse por encima */
+.enlace:hover{
+    padding: 40px 20px;
+    transition: all 0.5s ease-in-out;
+}
+/* Le aplica los estilos cuando doy clic y se quita cuando suelto el mouse */
+.enlace:active{
+    background: steelblue;
+    color: #fff;
+}
+.event{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 20px;
+    background: crimson;
+    color:#fff;
+    text-decoration: none;
+    padding: 20px;
+}
+.event:active{
+    padding: 23px;
+}
+#objetivo{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 20px;
+    background: steelblue;
+    transition: all 0.5s ease-in-out;
+}
+/* La seudoclase target modifica el estilo la clase objetivo */
+#objetivo:target{
+    margin-left: 150px;
+}
+.form{
+    width:80%;
+    margin:30px auto;  
+    background: #f2f2f2;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    padding: 30px;
+}
+/* Cuando tengamos elementos en el estado focus se cambia los estilos al padre */
+.form:focus-within{
+    background: darkcyan;
+}
+.form__title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+input{
+    display: block;
+}
+input[type="text"],
+input[type="email"]{
+    width: 100%;
+    padding: 12px 5px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+}
+/* Al estar activo en un input se llama focus */
+input:focus{
+    background: rgba(220, 20, 60, 0.425);
+}
+/* Seudoclase checked */
+input[type="checkbox"]:checked + label{
+    background: crimson;
+    color: white;
+}
+h3{
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* La seudoclase not no aplica los estilos que dentro del parentesis */
+h3:not(.title){
+    color:crimson;
+}
