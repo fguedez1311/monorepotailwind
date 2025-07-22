@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="src/css/estilos.css">
 </head>
 <body>
-    <header class="bg-blue-500 min-h-[600px]">
+    <header class="bg-blue-500">
         
-        <nav class="py-6 text-white grid justify-items-center items-center gap-6  wrapper">
+        <nav class="py-6 text-white grid justify-items-center items-center gap-6  wrapper md:grid-flow-col md:justify-between">
              <a href="./">
                 <h2 class="text-3xl font-extrabold">Landing</h2>
             </a>
             <div class="space-x-4">
                 <a href="#">Inicio</a>
-                <a href="#">Habilidades</a>
-                <a href="#">Proyectos</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#proyectos">Proyectos</a>
             </div> 
         </nav>
-        <section class="wrapper py-14 flex flex-col items-center gap-12">
-            <img src="./src/assets/hero.png" class="max-w-lg w-full" >
-            <div class="text-white space-y-6 text-center">
-                <h1 class="text-3xl font-bold">Mi nombre es Francisco Guedez, desarrollador Web</h1>
+        <section class="wrapper py-14 flex flex-col items-center gap-12 md:flex-row min-h-[600px]">
+            <img src="./src/assets/hero.png" class="max-w-lg w-full md:w-2/5" >
+            <div class="text-white space-y-6 text-center md:w-3/5 md:text-left">
+                <h1 class="text-3xl font-bold md:text-4xl">Mi nombre es Francisco Guedez, desarrollador Web</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio officiis quia officia nobis molestiae a minima eaque quam! Quaerat voluptate exercitationem qui, aliquid necessitatibus fugiat laborum distinctio rerum debitis rem.</p>
                 <a href="#" class="inline-block bg-slate-700 py-4 px-8 rounded-xl font-bold">Contátame ahora</a>
             </div>
@@ -31,9 +31,9 @@
            
     </header>
     <main>
-        <section class="wrapper py-20 text-center">
-            <h2 class="text-3xl font-bold">¡Nuestra Habilidades 👇   </h2>
-            <div class="mt-12 grid gap-8 max-w-md mx-auto">
+        <section class="wrapper py-20 text-center" id="habilidades">
+            <h2 class="text-3xl font-bold md:text-4xl">¡Nuestra Habilidades 👇   </h2>
+            <div class="mt-12 grid gap-8 max-w-md mx-auto md:grid-flow-col md:max-w-none auto-cols-fr">
                 <article class="space-y-6">
                     <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"  class="fill-orange-700 w-20 mx-auto"><path d="M4.136 3.012h15.729l-1.431 16.15-6.451 1.826-6.414-1.826-1.433-16.15zm5.266 7.302-.173-2.035 7.533.002.173-1.963-9.87-.002.522 5.998h6.835l-.243 2.566-2.179.602-2.214-.605-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08.558-6.111H9.402v-.001z"></path></svg>
                     <h3 class="text-slate-900 text-xl font-bold">HTML5 + FIGMA</h3>
@@ -53,6 +53,72 @@
                 </article>
             </div>
         </section>
+        <section class="bg-slate-50 py-20" id="proyectos">
+            <div class="wrapper text-center">
+                <h2 class="text-3xl font-bold mb-6 md:text-4xl">¡Nuestro Trabajo</h2>
+                <p class="font-light text-xl text-slate-500 w-2/3 mx-auto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia corporis dolorum non quis vel hic tenetur ullam nemo, voluptatibus voluptate.</p>
+                <div class="mt-12 grid gap-12  md:grid-flow-col auto-cols-fr">
+                    <article class="w-4/5 mx-auto space-y-4">
+                        <img src="./src/assets/img1.jpg" class="aspect-square object-cover rounded-2xl">
+                        <h3 class="text-2xl font-medium">Apple</h3>
+                        <p class="text-slate-500 font-light">Lorem ipsum dolor sit amet.</p>
+                        
+                    </article>
+                    <article class="w-4/5 mx-auto space-y-4">
+                        <img src="./src/assets/producto1.jpg" class="aspect-square object-cover rounded-2xl">
+                        <h3 class="text-2xl font-medium">Coca Cola</h3>
+                        <p class="text-slate-500 font-light">Lorem ipsum dolor sit amet.</p>
+                        
+                    </article>
+                    <article class="w-4/5 mx-auto space-y-4">
+                        <img src="./src/assets/producto2.jpg" class="aspect-square object-cover rounded-2xl">
+                        <h3 class="text-2xl font-medium">Zapato Nike</h3>
+                        <p class="text-slate-500 font-light">Lorem ipsum dolor sit amet.</p>
+                        
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="wrapper py-20 grid gap-12 md:grid-flow-col auto-cols-fr items-center">
+            <div>
+                <h2 class="text-3xl font-bold">Dame tu correo, y te contactaré a la brevedad</h2>
+                <p class="font-light text-slate-600 text-lg mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae reprehenderit aperiam explicabo facere asperiores maxime laborum eligendi, laudantium culpa et, accusamus libero iusto ipsum officia, neque totam magni saepe nesciunt.</p>
+
+            </div>
+            <form class="grid gap-6">
+                <input type="email" name="" id="" class="border border-slate-900 p-4 rounded-lg" placeholder="Hola@Hola.com">
+                <input type="submit" class="bg-orange-500 text-white py-4 px-10 rounded-lg" value="Contáctame">
+            </form>
+           
+        </section>
+        <footer class="bg-blue-100">
+                <div class="wrapper py-20">
+                    <section class="flex flex-col text-center gap-6 border-b-2 border-slate-400 pb-8">
+                        <h2 class="text-3xl text-slate-900 font-extrabold">Landing</h2>
+                        <p class="text-slate-600">fguedez1311@gmail.com</p>
+                    </section>
+                    <section class="flex flex-col text-center gap-6 pt-8">
+                        <div class="flex justify-center items-center gap-6 text-slate-900">
+
+                            <a href="#">Inicio</a>
+                            <a href="#habilidades">Habilidades</a>
+                            <a href="#proyectos">Proyectos</a>
+                        </div>
+                        <div class="grid grid-flow-col auto-cols-max gap-8 justify-center">
+                            <a href="#">
+                                <img src="./src/assets/fb.svg" class="w-7" alt="Facebook">
+                            </a>
+                            <a href="#">
+                                <img src="./src/assets/instagram.svg" class="w-7" alt="Facebook">
+                            </a>
+                             <a href="#">
+                                <img src="./src/assets/twitter.svg" class="w-7" alt="Facebook">
+                            </a>
+
+                        </div>
+                    </section>
+                </div>
+        </footer>
     </main>
 </body>
 </html>
