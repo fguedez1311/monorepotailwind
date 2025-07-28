@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme{
+    --color-principal-pagina:#121416;
+    --color-button:#DCE8F3;
+    --color-borde-pagina:#2C3135
+}
+
+:root{
+    --icono-menu-cerrado:url('../assets/menu-open.svg');
+    --icono-menu-abierto:url('../assets/menu-close.svg');
+}

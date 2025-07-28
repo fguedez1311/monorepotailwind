@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar</title>
+    <link rel="stylesheet" href="src/css/estilos.css">
+</head>
+<body class="bg-principal-pagina">
+   <nav class="py-8 border-2 border-borde-pagina">
+        <div class="flex w-9/10 mx-auto justify-between">
+            <a href="#" class="relative z-10">
+                <img src="src/assets/logo.svg" alt="Logo página" class="logo">
+            </a>
+            <label 
+                class="
+                      relative z-10
+                      size-8 
+                      bg-cover
+                      cursor-pointer
+                      transition-all
+                      peer/label
+
+                      bg-(image:--icono-menu-cerrado)
+                      has-checked:bg-(image:--icono-menu-abierto)
+                 "
+            >
+                <input type="checkbox" name="" id="" 
+                class="hidden">
+            </label>
+            <ul class="
+                text-white absolute inset-0
+                bg-principal-pagina 
+                flex flex-col gap-8
+                justify-center items-center
+                -translate-y-full
+                peer-has-checked/label:translate-0
+                transition-transform
+            ">
+                <li>
+                    <a href="#">Acerca de </a>
+                </li>
+                <li>
+                    <a href="#" class="
+                        bg-button text-principal-pagina py-4
+                        px-6 rounded-full
+                    "
+                    >
+                    Ingresa al Curso
+                </a>
+                </li>
+            </ul>
+        </div>
+   </nav>
+   
+</body>
+</html> 
