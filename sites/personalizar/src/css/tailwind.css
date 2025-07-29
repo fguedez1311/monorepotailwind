@@ -3,10 +3,13 @@
 @theme{
     --color-principal-pagina:#121416;
     --color-button:#DCE8F3;
-    --color-borde-pagina:#2C3135
+    --color-borde-pagina:#2C3135;
+    --breakpoint-md:52rem;
+    --breakpoint-fran:70rem;
 }
 
 :root{
     --icono-menu-cerrado:url('../assets/menu-open.svg');
     --icono-menu-abierto:url('../assets/menu-close.svg');
+    --hero-image:linear-gradient(#000000a2,#000000c2), url('../assets/hero-image.jpg');
 }

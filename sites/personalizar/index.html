@@ -23,6 +23,7 @@
 
                       bg-(image:--icono-menu-cerrado)
                       has-checked:bg-(image:--icono-menu-abierto)
+                      md:hidden 
                  "
             >
                 <input type="checkbox" name="" id="" 
@@ -36,6 +37,7 @@
                 -translate-y-full
                 peer-has-checked/label:translate-0
                 transition-transform
+                md:static md:translate-0 md:flex-row
             ">
                 <li>
                     <a href="#">Acerca de </a>
@@ -52,6 +54,26 @@
             </ul>
         </div>
    </nav>
+   <section class="bg-(image:--hero-image) bg-center bg-cover
+                 text-white p-8 my-15
+                   w-9/10 mx-auto min-h-130
+                   rounded-3xl
+                   flex flex-col gap-4 justify-center items-center
+                   text-center
+                   md:text-left
+                   md:justify-end
+                   md:items-start
+                   md:pb-20
+    ">
+        <h1 class="text-4xl font-bold md:text-5xl">Domina CSS desde cero a Heroe</h1>
+        <p>
+            Aprende CSS desde los fundamentos hasta técnicas avanzadas.
+            Conviértete en un experto en diseño web y crea sitios web
+            impresionantes con nuestro curso completo de CSS.
+           
+        </p>
+         <a href="#" class="bg-button text-principal-pagina py-4 px-6 rounded-full font-bold">Inscribete Ahora</a>
+   </section>
    
 </body>
 </html> 
