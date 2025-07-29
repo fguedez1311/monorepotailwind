@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personalizar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/estilos.css">
 </head>
-<body class="bg-principal-pagina">
+<body class="bg-principal-pagina font-inter">
    <nav class="py-8 border-2 border-borde-pagina">
         <div class="flex w-9/10 mx-auto justify-between">
             <a href="#" class="relative z-10">
@@ -43,7 +46,7 @@
                     <a href="#">Acerca de </a>
                 </li>
                 <li>
-                    <a href="#" class="
+                    <a href="https://alexcgdesign.com/cursocss" class="
                         bg-button text-principal-pagina py-4
                         px-6 rounded-full
                     "
@@ -56,7 +59,7 @@
    </nav>
    <section class="bg-(image:--hero-image) bg-center bg-cover
                  text-white p-8 my-15
-                   w-9/10 mx-auto min-h-130
+                   w-9/10 mx-auto min-h-150
                    rounded-3xl
                    flex flex-col gap-4 justify-center items-center
                    text-center
@@ -66,14 +69,74 @@
                    md:pb-20
     ">
         <h1 class="text-4xl font-bold md:text-5xl">Domina CSS desde cero a Heroe</h1>
-        <p>
+        <p class="md:max-w-2/3">
             Aprende CSS desde los fundamentos hasta técnicas avanzadas.
             Conviértete en un experto en diseño web y crea sitios web
             impresionantes con nuestro curso completo de CSS.
            
         </p>
-         <a href="#" class="bg-button text-principal-pagina py-4 px-6 rounded-full font-bold">Inscribete Ahora</a>
+         <a href="https://alexcgdesign.com/cursocss" class="bg-button text-principal-pagina py-4 px-6 rounded-full font-bold">Inscribete Ahora</a>
    </section>
+   <section class="w-9/10 mx-auto py-15 text-white">
+        <p>
+            Nuestro curso de CSS cubre todo lo que necesitas saber para convertirte en un experto en diseño web. Desde los fundamentos básicos hasta técnicas avanzadas, aprenderás a crear sitios web impresionantes y responsivos. 
+        </p>
+        <div class="mt-10 flex flex-wrap justify-center md:justify-between gap-10">
+            <article class="border border-borde-pagina bg-secundario-pagina w-full max-w-70 rounded-xl p-8 space-y-4">
+                <img src="src/assets/code-icon.svg" alt="Lo que aprenderas" class="w-8">
+                <h3 class="text-xl font-bold">Fundamentos de CSS</h3>
+                <p class="font-light text-textos-card" >
+                    Comprende los conceptos centrales de css, incluyendo selectores, propiedades y valores
+                </p>
+
+            </article>
+             <article class="border border-borde-pagina bg-secundario-pagina w-full max-w-70 rounded-xl p-8 space-y-4">
+                <img src="src/assets/advanced.svg" alt="Lo que aprenderas" class="w-8">
+                <h3 class="text-xl font-bold">Fundamentos de CSS</h3>
+                <p class="font-light text-textos-card" >
+                    Comprende los conceptos centrales de css, incluyendo selectores, propiedades y valores
+                </p>
+
+            </article>
+             <article class="border border-borde-pagina bg-secundario-pagina w-full max-w-70 rounded-xl p-8 space-y-4">
+                <img src="src/assets/advanced.svg" alt="Lo que aprenderas" class="w-8">
+                <h3 class="text-xl font-bold">Fundamentos de CSS</h3>
+                <p class="font-light text-textos-card" >
+                    Comprende los conceptos centrales de css, incluyendo selectores, propiedades y valores
+                </p>
+
+            </article>
+             <article class="border border-borde-pagina bg-secundario-pagina w-full max-w-70 rounded-xl p-8 space-y-4">
+                <img src="src/assets/advanced.svg" alt="Lo que aprenderas" class="w-8">
+                <h3 class="text-xl font-bold">Fundamentos de CSS</h3>
+                <p class="font-light text-textos-card" >
+                    Comprende los conceptos centrales de css, incluyendo selectores, propiedades y valores
+                </p>
+
+            </article>
+          
+        </div>
+   </section>
+   <footer class="border-t border-borde-pagina py-15">
+        <div class="w-9/10 mx-auto text-textos-card">
+            <nav>
+                <ul class="flex gap-8 justify-evenly flex-wrap **:hover:underline">
+                    <li>
+                        <a href="#">Política de Privacidad</a>
+                    </li>
+                    <li>
+                        <a href="#">Términos de Servicios</a>
+                    </li>
+                     <li>
+                        <a href="#">Contactanos</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="text-center mt-10">
+                &copy;CodeCreft. Todos los derechos reservados.
+            </p>
+        </div>
+   </footer>
    
 </body>
 </html> 
